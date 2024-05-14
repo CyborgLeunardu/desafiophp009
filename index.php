@@ -19,14 +19,14 @@
         <h1>Médias Aritméticas</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
         <label for="valor1"> 1° Valor </label>
-        <input type="number" name="valor1" id="valor1">
+        <input type="number" name="valor1" id="valor1" required>
         <label for="peso1"> 1° Peso </label>
-        <input type="number" name="peso1" id="peso1">
+        <input type="number" name="peso1" id="peso1" required min="1">
         <label for="valor2"> 2° Valor </label>
-        <input type="number" name="valor2" id="valor2">
+        <input type="number" name="valor2" id="valor2" required>
         <label for="peso2"> 2° Peso</label>
         <input type="number" name="peso2" id="peso2">
-        <input type="submit" value="Calcular Médias">
+        <input type="submit" value="Calcular Médias" required min="1">
     </form>
     </main>
     <section>
